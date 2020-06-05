@@ -1,6 +1,6 @@
-
-<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Message editor
+<a class="btn btn-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+   aria-controls="collapseExample">
+    Загрузить файл
 </a>
 <div class="collapse <#if message??>show</#if>" id="collapseExample">
     <div class="form-group mt-3">
@@ -25,14 +25,14 @@
             </div>
             <div class="form-group">
                 <div class="custom-file">
-                    <input type="file" name="file" id="customFile" />
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <label class="custom-file-label" for="customFile">Выбрать файл</label>
+                    <input type="file" name="file" id="customFile"/>
                 </div>
             </div>
-            <input type="hidden" name="_csrf" value="${_csrf.token}" />
-            <input type="hidden" name="id" value="<#if message??>${message.id}</#if>" />
+            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+            <input type="hidden" name="id" value="<#if message??>${message.id}</#if>"/>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Save message</button>
+                <button type="submit" class="btn btn-dark">Сохранить</button>
             </div>
         </form>
     </div>

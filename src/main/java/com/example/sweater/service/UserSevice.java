@@ -62,8 +62,8 @@ public class UserSevice implements UserDetailsService {
     private void sendMessage(User user) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
-                    "Hello, %s! \n" +
-                            "Welcome to Sweater. Please, visit next link: http://%s/activate/%s",
+                    "Добрый день, %s! \n" +
+                            "Для подтверждение вашего аккаунта, переходите по ссылке: http://%s/activate/%s",
                     user.getUsername(),
                     hostname,
                     user.getActivationCode()
